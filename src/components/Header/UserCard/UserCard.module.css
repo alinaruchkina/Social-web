@@ -1,0 +1,24 @@
+.main {
+  display: flex;
+  max-height: 505px;
+  padding: 10px;
+  margin: 8px;
+  box-shadow: 0px 0px 10px 0px;
+}
+.user_image {
+  width: 94px;
+  border-radius: 50px;
+  height: 92px;
+}
+.user_description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 13px;
+}
+.group_message {
+  display: flex;
+}
+.group_call {
+  margin-left: 15px;
+}

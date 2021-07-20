@@ -1,0 +1,83 @@
+.main {
+  max-width: 600px;
+  max-height: 600px;
+  margin: 0px 12px 17px 12px;
+  background: #424242;
+  display: table;
+  border-color: transparent;
+  border-radius: 5px;
+  padding: 13px;
+}
+
+.username {
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  height: 59px;
+  width: 62px;
+  border-radius: 62px;
+}
+
+.data_post {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.name {
+  color: #088dcd;
+  cursor: pointer;
+}
+
+.data {
+  font-size: 12px;
+  text-transform: capitalize;
+  color: #cccccc;
+}
+
+.photo {
+  width: 580px;
+}
+
+.description {
+  display: block;
+  font-family: math;
+  font-size: 14px;
+  color: #cccccc;
+  line-height: 26px;
+  padding: 13px 0px;
+}
+.reaction {
+  display: flex;
+  justify-content: space-around;
+  font-size: 10px;
+  line-height: 1;
+  width: 560px;
+  height: 20px;
+}
+.Like {
+  cursor: pointer;
+  color: green;
+  padding: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.Dislike {
+  cursor: pointer;
+  color: red;
+  padding: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.View {
+  color: #fff;
+  padding: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}

@@ -1,0 +1,8 @@
+.header {
+  max-width: 1100px;
+  background-color: rgb(218, 80, 80);
+}
+
+.header img {
+  width: 20px;
+}
