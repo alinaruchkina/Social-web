@@ -26,7 +26,7 @@ const Page = () => {
               src="https://image.flaticon.com/icons/png/512/107/107822.png"
               alt="alarm"
             />
-            <div> Notifications user</div>
+            <div> Notifications</div>
           </div>
         </div>
       </div>
