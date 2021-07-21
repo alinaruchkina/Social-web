@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Page.module.css';
 
 const Page = () => {
+  const [state, setstate] = useState(true);
   return (
     <div className={styles.main}>
       <div className={styles.user_info}>
@@ -19,6 +20,7 @@ const Page = () => {
               alt="sms"
             />
             <div className={styles.message}> Messages</div>
+            <div className={styles.numbers}>1</div>
           </div>
           <div className={styles.photo}>
             <img
@@ -26,13 +28,19 @@ const Page = () => {
               src="https://image.flaticon.com/icons/png/512/107/107822.png"
               alt="alarm"
             />
-            <div> Notifications</div>
+            <div className={styles.notification}> Notifications </div>
+
+            <div className={styles.number}> 9 </div>
           </div>
         </div>
       </div>
       <div className={styles.review}>
-        <button className={styles.like}>Likes</button>
-        <button className={styles.views}>Views</button>
+        <button className={state ? styles.views : styles.like} onClick={() => setstate(true)}>
+          Likes
+        </button>
+        <button className={state ? styles.like : styles.views} onClick={() => setstate(false)}>
+          Views{' '}
+        </button>
       </div>
     </div>
   );

@@ -12,6 +12,14 @@
   color: #088dcd;
   font-weight: 500;
   text-transform: capitalize;
+  cursor: pointer;
+  font-family: 'Roboto', 'Segoe Ui';
+}
+
+.user:hover {
+  color: white;
+  transition-delay: 1s;
+  transition-duration: 1s;
 }
 
 .image {
@@ -25,16 +33,31 @@
 }
 
 .user_page {
-  font-family: none;
   font-size: 15px;
   color: #cccccc;
-  margin: 7px;
-  padding-left: 6px;
+  display: inline-block;
+  padding-left: 10px;
+  vertical-align: middle;
+  width: 69.8%;
+  line-height: 28px;
 }
 
 .sms {
   height: 20px;
   width: 20px;
+  margin: 4px;
+}
+
+.message {
+  color: #ccc;
+  cursor: pointer;
+  font-family: 'Roboto', 'Segoe Ui';
+}
+
+.message:hover {
+  color: #088dcd;
+  transition-delay: 1s;
+  transition-duration: 3s;
 }
 
 .picture {
@@ -43,6 +66,7 @@
 .alarm {
   height: 20px;
   width: 20px;
+  margin: 4px;
 }
 
 .photo {
@@ -51,16 +75,70 @@
 .review {
   display: flex;
   justify-content: space-around;
+  padding: inherit;
 }
 
 .like {
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 1px;
+  font-size: 17px;
+  font-family: 'Roboto', 'Segoe Ui';
+  border-radius: 4px;
+  background: #363636;
+  width: 100px;
+  letter-spacing: 2px;
+  color: white;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.like:hover {
+  color: #088dcd;
 }
 
 .views {
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 1px;
+  font-size: 17px;
+  font-family: 'Roboto', 'Segoe Ui';
+  border-radius: 4px;
+  background: #088dcd;
+  width: 100px;
+  letter-spacing: 2px;
+  color: white;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.notification:hover {
+  color: #088dcd;
+  transition-delay: 1s;
+  transition-duration: 3s;
+}
+
+.notification {
+  cursor: pointer;
+  font-family: 'Roboto', 'Segoe Ui';
+}
+
+.number {
+  border-radius: 15%;
+  border: 1px solid #cecece;
+  display: inline-block;
+  line-height: 16px;
+  margin-left: 3px;
+  margin-top: 6px;
+  padding: 0px;
+  height: 17px;
+  font-style: italic;
+  font-size: 1px;
+}
+
+.numbers {
+  border-radius: 15%;
+  border: 1px solid #cecece;
+  display: inline-block;
+  line-height: 16px;
+  margin-left: 3px;
+  margin-top: 6px;
+  padding: 0px;
+  height: 17px;
+  font-style: italic;
+  font-size: 1px;
 }
