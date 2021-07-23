@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Page.module.css';
+import RemoveRedEyeIcon from '@material-ui/icons/RemoveRedEye';
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 
 const Page = () => {
   const [state, setstate] = useState(true);
@@ -36,12 +38,37 @@ const Page = () => {
       </div>
       <div className={styles.review}>
         <button className={state ? styles.views : styles.like} onClick={() => setstate(true)}>
-          Likes
+          LIKES
         </button>
         <button className={state ? styles.like : styles.views} onClick={() => setstate(false)}>
-          Views{' '}
+          VIEWS{' '}
         </button>
       </div>
+      {state ? (
+        <div>
+          <div>
+            <div className={styles.scan}>
+              <FavoriteBorderIcon style={{ color: 'green', width: '20px' }} />
+              884
+            </div>
+          </div>
+
+          <div className={styles.new_view}>35 New Likes This Week</div>
+        </div>
+      ) : (
+        <div>
+          <div>
+            <div className={styles.scan}>
+              <div className={styles.heart}>
+                <RemoveRedEyeIcon style={{ color: 'green', width: '20px' }} />
+              </div>
+              440
+            </div>
+          </div>
+
+          <div className={styles.new_like}>440 New Views This Week</div>
+        </div>
+      )}
     </div>
   );
 };

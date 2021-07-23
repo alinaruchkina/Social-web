@@ -33,13 +33,14 @@
 }
 
 .user_page {
-  font-size: 15px;
+  font-size: 13px;
   color: #cccccc;
   display: inline-block;
   padding-left: 10px;
   vertical-align: middle;
   width: 69.8%;
   line-height: 28px;
+  letter-spacing: 0.1px;
 }
 
 .sms {
@@ -79,15 +80,16 @@
 }
 
 .like {
-  font-size: 17px;
+  font-size: 11px;
   font-family: 'Roboto', 'Segoe Ui';
   border-radius: 4px;
   background: #363636;
   width: 100px;
-  letter-spacing: 2px;
+  letter-spacing: 0.5px;
   color: white;
-  padding: 3px;
+  padding: 5px;
   cursor: pointer;
+  font-weight: 500;
 }
 
 .like:hover {
@@ -95,15 +97,16 @@
 }
 
 .views {
-  font-size: 17px;
+  font-size: 11px;
   font-family: 'Roboto', 'Segoe Ui';
   border-radius: 4px;
   background: #088dcd;
   width: 100px;
-  letter-spacing: 2px;
+  letter-spacing: 0.5px;
   color: white;
-  padding: 3px;
+  padding: 5px;
   cursor: pointer;
+  font-weight: 500;
 }
 
 .notification:hover {
@@ -141,4 +144,44 @@
   height: 17px;
   font-style: italic;
   font-size: 1px;
+}
+.scan {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+  color: #eee;
+  letter-spacing: 0.1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new_like {
+  color: green;
+  float: left;
+  font-size: 13px;
+  text-align: center;
+  text-transform: capitalize;
+  width: 100%;
+  cursor: pointer;
+  font-family: 'Roboto', 'Segoe Ui';
+  line-height: 1.5;
+}
+.new_view {
+  color: green;
+  float: left;
+  font-size: 13px;
+  text-align: center;
+  text-transform: capitalize;
+  width: 100%;
+  cursor: pointer;
+  font-family: 'Roboto', 'Segoe Ui';
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.heart {
+  margin-top: 6px;
 }
